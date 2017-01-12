@@ -11,6 +11,8 @@ Allows CraftCommerce to integrate with the [Cardconnect](https://cardconnect.com
     * Merchant ID
     * API Username
     * API Password
+    * API Host
+    * API Port
 
 ### TODO
 * Include Omnipay-cardconnect via composer instead.
