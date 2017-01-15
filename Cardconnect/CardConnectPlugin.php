@@ -41,7 +41,7 @@ class CardconnectPlugin extends BasePlugin
      */
     public function getDeveloper()
     {
-        return "Jeremy Bueler";
+        return "Roundhouse Agency";
     }
 
     /**
@@ -51,7 +51,7 @@ class CardconnectPlugin extends BasePlugin
      */
     public function getDeveloperUrl()
     {
-        return "#";
+        return "http://www.roundhouseagency.com";
     }
 
     public function commerce_registerGatewayAdapters(){
