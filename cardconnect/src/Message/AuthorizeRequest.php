@@ -18,12 +18,14 @@ class AuthorizeRequest extends AbstractRequest
     		'currency'  => $this->getCurrency(),
     		'orderid'   => $this->getTransactionId(),
     		'name'      => $card->getName(),
-    		'street'    => $card->getBillingAddress1(),
+    		'address'   => $card->getBillingAddress1(),
     		'city'      => $card->getBillingCity(),
     		'region'    => $card->getBillingState(),
     		'country'   => $card->getBillingCountry(),
     		'postal'    => $card->getBillingPostcode(),
-    		'tokenize'  => "Y",
+    		'phone'     => $card->getBillingPhone(),
+    		'email'     => $card->getEmail(),
+    		'tokenize'  => "Y"
     	);
         return $data;
     }
