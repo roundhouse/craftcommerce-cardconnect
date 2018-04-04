@@ -18,12 +18,15 @@ class PurchaseRequest extends AbstractRequest
     		'currency'  => $this->getCurrency(),
     		'orderid'   => $this->getTransactionId(),
     		'name'      => $card->getName(),
-    		'street'    => $card->getBillingAddress1(),
+    		'address'   => $card->getBillingAddress1(),
     		'city'      => $card->getBillingCity(),
     		'region'    => $card->getBillingState(),
     		'country'   => $card->getBillingCountry(),
     		'postal'    => $card->getBillingPostcode(),
-            'retref'    => $this->getTransactionReference(),
+    		'phone'     => $card->getBillingPhone(),
+    		'email'     => $card->getEmail(),
+    		'retref'    => $this->getTransactionReference(),
+    		'ecomind'   => "E",
     		'tokenize'  => "Y",
     		'capture'   => "Y"
     	);
