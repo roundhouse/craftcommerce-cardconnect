@@ -25,6 +25,7 @@ class AuthorizeRequest extends AbstractRequest
     		'postal'    => $card->getBillingPostcode(),
     		'phone'     => $card->getBillingPhone(),
     		'email'     => $card->getEmail(),
+    		'ecomind'   => "E",
     		'tokenize'  => "Y"
     	);
         return $data;
