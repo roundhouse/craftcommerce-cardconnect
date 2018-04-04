@@ -26,6 +26,7 @@ class PurchaseRequest extends AbstractRequest
     		'phone'     => $card->getBillingPhone(),
     		'email'     => $card->getEmail(),
     		'retref'    => $this->getTransactionReference(),
+    		'ecomind'   => "E",
     		'tokenize'  => "Y",
     		'capture'   => "Y"
     	);
