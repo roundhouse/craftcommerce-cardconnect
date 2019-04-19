@@ -13,9 +13,6 @@ class CaptureRequest extends AbstractRequest
     		'currency'  => $this->getCurrency(),
     		'retref'   => $this->getTransactionReference()
     	);
-
-        error_log(print_r($this->getEndpoint(), TRUE)); 
-        error_log(print_r($data, TRUE)); 
         
         return $data;
     }
